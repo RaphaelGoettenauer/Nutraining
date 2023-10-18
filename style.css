@@ -1,0 +1,389 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url(/fontes/Poppins-Regular.ttf);
+}
+
+body {
+  background-color: #e4f0eb;
+}
+
+main {
+  width: 70vw;
+  height: auto;
+  background-color: white;
+  margin: auto;
+  font-family: "poppins", Courier, monospace;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header p {
+  display: inline-block;
+  font-size: 1.5vw;
+  margin-right: 22%;
+}
+
+header a {
+  display: inline-block;
+  margin: 0 1%;
+  font-size: 1vw;
+  text-decoration: none;
+  color: #1e1e1e;
+}
+
+.apresentação {
+  width: 90%;
+  height: 400px;
+  background-color: white;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  color: #355230;
+  overflow: hidden;
+}
+
+.apresentaçãotexto {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  padding-left: 1%;
+}
+
+.extra {
+  display: none;
+}
+
+.apresentaçãotexto p {
+  color: #1e1e1e;
+}
+
+.apresentaçãotexto a {
+  margin-left: 30%;
+}
+
+.apresentaçãotexto a img {
+  width: 70%;
+  margin: auto;
+}
+
+.apresentaçãofoto {
+  margin-top: 2%;
+  width: 50%;
+  height: 100%;
+}
+
+.mainfoto {
+  height: 80%;
+  display: block;
+  margin: auto;
+}
+
+.redesociais {
+  height: 18%;
+  width: 20%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sobre {
+  width: 90%;
+  height: auto;
+  background-color: white;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.sobre img {
+  width: 50%;
+}
+
+.sobretexto {
+  height: auto;
+  width: 50%;
+  text-wrap: wrap;
+  padding: 2%;
+}
+
+.sobretexto p {
+  font-size: 1.08vw;
+}
+
+.sp1 {
+  color: #355230;
+  font-weight: bolder;
+  text-align: left;
+  font-size: 1.5vw;
+}
+
+.sp2 {
+  font-weight: lighter;
+}
+
+.depoimentos {
+  padding: 5% 5%;
+  width: 100%;
+  height: auto;
+  background-color: #E4F0EB;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 1vw;
+}
+
+.especialidades {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 1vw;
+}
+
+.especialidades .sp1 {
+  text-align: center;
+  margin-left: 0%;
+  margin-bottom: 5%;
+}
+
+.caixas {
+  margin: auto;
+  height: 80%;
+  width: 90%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.caixinhas {
+  padding: 1%;
+  border-radius: 2px;
+  width: 30%;
+  height: 100%;
+  text-wrap: wrap;
+  box-shadow: 0px 0px 6px #cecece;
+}
+
+.agende {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center !important;
+}
+
+.agende .sp1 {
+  text-align: center;
+  margin-left: 0%;
+}
+
+.agende img {
+  width: 90%;
+}
+
+.agende a img {
+  margin-top: 20px;
+  width: 30%;
+}
+
+.contato {
+  padding: 3% 0;
+  width: 100%;
+  height: 500px;
+  background-color: #e4f0eb;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contato input {
+  width: 20%;
+  height: 7%;
+}
+
+.contato .biginput {
+  height: 30%;
+  text-wrap: wrap;
+}
+
+footer {
+  padding: 1%;
+  height: auto;
+  background-color: #7cc5a8;
+}
+
+@media (max-width: 800px) {
+  header a {
+    display: none;
+  }
+
+  header {
+    justify-content: left;
+  }
+
+  header p {
+    font-size: 5vw;
+    margin-left: 5%;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .apresentação {
+    flex-flow: column;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .apresentaçãotexto {
+    width: 100%;
+    text-align: center;
+  }
+
+  .apresentaçãofoto {
+    width: 100%;
+  }
+
+  .mainfoto {
+    height: auto;
+    margin: auto;
+    width: 80%;
+  }
+  
+  .redesociais {
+    height: 18%;
+    width: 20%;
+    display: flex;
+    margin: 5% auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sobre {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sobre img {
+    width: 100%;
+  }
+  
+  .sobretexto {
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+  }
+
+  .sobretexto p {
+    font-size: 3vw;
+  }
+
+  .depoimentos {
+    padding: 8% 5%;
+    width: 100%;
+    height: auto;
+    background-color: #E4F0EB;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center; 
+    font-size: 1rem;
+  }
+
+  .depoimentos .sp1 {
+    text-align: center !important;
+    font-size: 5vw;
+  }
+  
+
+  .especialidades {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 3vw;
+  }
+
+  .especialidades .sp1 {
+    text-align: center;
+    font-size: 5vw;
+  }
+  
+  .caixas {
+    margin: auto;
+    height: 90%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .caixinhas {
+    width: 100%;
+    height: 100%;
+    text-wrap: wrap;
+    box-shadow: 0px 0px 0px #cecece;
+    margin-bottom: 5%;
+  }
+
+  .agende img {
+    width: 100%;
+  }
+
+  .agende a img {
+    margin-top: 20px;
+    width: 60%;
+  }
+
+  .contato input {
+    width: 90%;
+    height: 7%;
+  }
+
+  .apresentaçãotexto a {
+    display: none;
+  }
+
+  .apresentaçãotexto h1 {
+    display: none;
+  }
+
+  .apresentaçãotexto .extra {
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 5%;
+
+  }
+
+  .sobretexto .sp1 {
+    text-align: center;
+    font-size: 5vw;
+  }
+
+
+}
